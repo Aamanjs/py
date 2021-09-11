@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us Section</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+	<link rel="stylesheet" type="text/css" href="styles2.css">
+</head>	
+<body>
+    <nav>
+        <a href="index.html"><img src="logo.png"></a>
+        <div class="nav-links" id="navLinks">
+        
+            <i class=" fa fa-times" onclick="hideMenu()"></i> 
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="conferences.html">CONFERENCES</a></li>
+                <li><a href="contactus.html">CONTACT</a></li>
+                
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i> 
+    </nav>
+	<div class="section">
+		<div class="container">
+			<div class="content-section">
+				<div class="title">
+					<h1>About Us</h1>
+				</div>
+				<div class="content">
+					<h3>Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+				
+			</div>
+			<div class="image-section">
+				<img src="sample.jpg">
+			</div>
+		</div>
+	</div>
+    <section class="footer">
+        <h3>&copy; SMET Society for Research international - All rights reserved</h3>
+        <div class="icons">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+
+         </div>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+
+	
+</body>
+</html>
